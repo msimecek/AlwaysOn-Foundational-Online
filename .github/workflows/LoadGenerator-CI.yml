@@ -8,6 +8,7 @@ on:
 
 env:
   DOTNET_VERSION: "6.0"
+  NODEJS_VERSION: "16"
 
 defaults:
   run:
@@ -39,5 +40,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: "Setup Node.js ${{ env.NODEJS_VERSION }}"
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODEJS_VERSION }}
+          cache: "npm"
+          #cache-dependency-path: ${{ env.WORKDIR }}/package-lock.json
+
       - name: "Build RegionalLoadGenerator"
-        run: npm ci
+        run: |
+          cd RegionalLoadGenerator
+          npm ci
