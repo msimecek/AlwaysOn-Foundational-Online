@@ -30,4 +30,4 @@ jobs:
       - name: "Build health model panel"
         run: |
           npm install
-          npm run start
+          npm run build
