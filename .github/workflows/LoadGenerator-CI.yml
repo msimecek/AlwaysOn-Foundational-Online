@@ -45,7 +45,7 @@ jobs:
         with:
           node-version: ${{ env.NODEJS_VERSION }}
           cache: "npm"
-          #cache-dependency-path: ${{ env.WORKDIR }}/package-lock.json
+          cache-dependency-path: RegionalLoadGenerator/package-lock.json
 
       - name: "Build RegionalLoadGenerator"
         run: |
