@@ -16,7 +16,7 @@ defaults:
 jobs:
 
   build-and-test:
-    name: Build and test health model panel
+    name: Build health model panel
     runs-on: ubuntu-latest
 
     steps:

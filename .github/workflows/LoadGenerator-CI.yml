@@ -16,7 +16,7 @@ defaults:
 
 jobs:
   build-and-test-global:
-    name: Build and test global
+    name: Build global orchestrator
     runs-on: ubuntu-latest
 
     steps:
@@ -34,7 +34,7 @@ jobs:
 
 
   build-and-test-regional:
-    name: Build and test regional
+    name: Build regional load generator
     runs-on: ubuntu-latest
 
     steps:
