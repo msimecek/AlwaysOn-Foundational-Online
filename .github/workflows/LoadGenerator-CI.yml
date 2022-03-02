@@ -1,4 +1,4 @@
-name: LoadGenerator - CI
+name: Component CI - LoadGenerator
 
 on:
   pull_request:

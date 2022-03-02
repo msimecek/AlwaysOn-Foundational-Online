@@ -1,4 +1,4 @@
-name: SloProcessor - CI
+name: Component CI - SloProcessor
 
 on:
   pull_request:

@@ -1,4 +1,4 @@
-name: Grafana - CI
+name: Component CI - Grafana
 
 on:
   pull_request:
