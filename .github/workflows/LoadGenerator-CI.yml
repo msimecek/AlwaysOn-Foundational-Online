@@ -26,7 +26,7 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
-      - name: "Build the code"
+      - name: "Build GlobalOrchestrator"
         run: |
           cd GlobalOrchestrator
           dotnet build
@@ -39,12 +39,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: "Setup .NET Core ${{ env.DOTNET_VERSION }}"
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: ${{ env.DOTNET_VERSION }}
-
-      - name: "Build the code"
-        run: |
-          cd RegionalLoadGenerator
-          dotnet build
+      - name: "Build RegionalLoadGenerator"
+        run: npm ci
