@@ -44,10 +44,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODEJS_VERSION }}
-          # cache: "npm"
-          # cache-dependency-path: RegionalLoadGenerator/package-lock.json
 
       - name: "Build RegionalLoadGenerator"
         run: |
           cd RegionalLoadGenerator
           npm install
+          npm run start
